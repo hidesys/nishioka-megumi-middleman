@@ -51,3 +51,7 @@ configure :build do
   # アセットファイルの URL にハッシュを追加 (URL ヘルパの使用が必要)
   activate :asset_hash
 end
+
+activate :gh_pages do |gh_pages|
+  gh_pages.remote = 'git@github.com:hidesys/nishioka-megumi-github-pages.git'
+end
