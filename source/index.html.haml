@@ -15,7 +15,8 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700", :rel => "stylesheet", :type => "text/css"}/
     / Bootstrap js
-    %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", :src => "https://code.jquery.com/jquery-3.3.1.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=", :src => "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"}
     / CSS
@@ -65,7 +66,7 @@
         .intro-text
           .intro-lead-in コンピュータで相反する要求を同時に解決する
           .intro-heading.text-uppercase 西岡めぐみソフトウェア
-          %a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger{:href => "#services"} サービス
+          %a.btn.btn-primary.btn-xl.js-scroll-trigger{:href => "#services"} サービス
     / Services
     %section#services
       .container
@@ -101,7 +102,7 @@
         .row
           .col-lg-12.text-center
             %p
-              %a.btn.btn-info.btn-xl{href: "https://takk.fun/hidesys", target: "_blank"} takk!からコンタクトを取る
+              %a.btn.btn-info.btn-xl.js-scroll-trigger{href: "#contact"} コンタクトを取る
     / Portfolio Grid
     -#
       %section#portfolio.bg-light
@@ -303,5 +304,5 @@
                 %li.list-inline-item
                   %a{:href => "#"} Terms of Use
     / Modals (Removed)
-    = partial "modals"
+    = #partial "modals"
     = javascript_include_tag "agency"
