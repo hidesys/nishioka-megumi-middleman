@@ -1,0 +1,324 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %meta{:content => "西岡めぐみソフトウェアは、コンピュータで相反する要求を同時に解決するソフトウェアデベロッパーです。", :name => "description"}/
+    %meta{:content => "西岡めぐみ / hidesys", :name => "author"}/
+    %title 西岡めぐみソフトウェア
+    / Latest compiled and minified CSS
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
+    / Custom fonts for this template
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.1.0/css/all.css", :integrity => "sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Kaushan+Script", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700", :rel => "stylesheet", :type => "text/css"}/
+    / Custom styles for this template
+    = stylesheet_link_tag "agency"
+    %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"}
+    /favicons
+    %link{:href => "/favicons/apple-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
+    %link{:href => "/favicons/apple-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}/
+    %link{:href => "/favicons/apple-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "/favicons/apple-icon-76x76.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+    %link{:href => "/favicons/apple-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+    %link{:href => "/favicons/apple-icon-120x120.png", :rel => "apple-touch-icon", :sizes => "120x120"}/
+    %link{:href => "/favicons/apple-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}/
+    %link{:href => "/favicons/apple-icon-152x152.png", :rel => "apple-touch-icon", :sizes => "152x152"}/
+    %link{:href => "/favicons/apple-icon-180x180.png", :rel => "apple-touch-icon", :sizes => "180x180"}/
+    %link{:href => "/favicons/android-icon-192x192.png", :rel => "icon", :sizes => "192x192", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+    %link{:href => "/favicons/manifest.json", :rel => "manifest"}/
+    %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
+    %meta{:content => "/favicons/ms-icon-144x144.png", :name => "msapplication-TileImage"}/
+    %meta{:content => "#ffffff", :name => "theme-color"}/
+  %body#page-top
+    / Navigation
+    %nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+      .container
+        %a.navbar-brand.js-scroll-trigger{:href => "#page-top"} Xihui Software
+        %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+          Menu
+          %i.fa.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          %ul.navbar-nav.text-uppercase.ml-auto
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#services"} Services
+            -#
+              %li.nav-item
+                %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Portfolio
+              %li.nav-item
+                %a.nav-link.js-scroll-trigger{:href => "#about"} About
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#team"} Members
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
+    / Header
+    %header.masthead
+      .container
+        .intro-text
+          .intro-lead-in コンピュータで相反する要求を同時に解決する
+          .intro-heading.text-uppercase 西岡めぐみソフトウェア
+          %a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger{:href => "#services"} サービス
+    / Services
+    %section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2.section-heading.text-uppercase Services
+            %h3.section-subheading.text-muted 西岡めぐみソフトウェアが提供する3つのサービス
+        .row.text-center
+          .col-md-4
+            %span.fa-stack.fa-4x
+              %i.fa.fa-circle.fa-stack-2x.text-primary
+              %i.fa.fa-laptop.fa-stack-1x.fa-inverse
+            %h4.service-heading Webアプリ開発
+            %p.text-muted Ruby on Rails, Sinatraを利用した動的WebサイトやWebアプリの開発、Androidアプリ開発、PMAアプリ開発を行っています。
+          .col-md-4
+            %span.fa-stack.fa-4x
+              %i.fa.fa-circle.fa-stack-2x.text-primary
+              %i.fa.fa-tasks.fa-stack-1x.fa-inverse
+            %h4.service-heading 要件定義支援
+            %p.text-muted Webアプリの開発を委託するのが初めての企業様におすすめ。ITのプロとして、委託料金の適正化・要件定義のスムース化を支援します。初回無料・10万円〜
+          .col-md-4
+            %span.fa-stack.fa-4x
+              %i.fa.fa-circle.fa-stack-2x.text-primary
+              %i.fa.fa-globe.fa-stack-1x.fa-inverse
+            %h4.service-heading インドネシア進出支援
+            %p.text-muted 中部ジャワを拠点にインドネシア進出・マーケット調査・農業農民動向調査などを行います。
+        .row
+          .col-lg-12.text-center
+            %p
+              %a.btn.btn-info.btn-xl{href: "https://takk.fun/hidesys", target: "_blank"} takk!からコンタクトを取る
+    / Portfolio Grid
+    -#
+      %section#portfolio.bg-light
+        .container
+          .row
+            .col-lg-12.text-center
+              %h2.section-heading.text-uppercase Portfolio
+              %h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+          .row
+            .col-md-4.col-sm-6.portfolio-item
+              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal1"}
+                .portfolio-hover
+                  .portfolio-hover-content
+                    %i.fa.fa-plus.fa-3x
+                %img.img-fluid{:alt => "", :src => "img/portfolio/01-thumbnail.jpg"}/
+              .portfolio-caption
+                %h4 Threads
+                %p.text-muted Illustration
+            .col-md-4.col-sm-6.portfolio-item
+              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
+                .portfolio-hover
+                  .portfolio-hover-content
+                    %i.fa.fa-plus.fa-3x
+                %img.img-fluid{:alt => "", :src => "img/portfolio/02-thumbnail.jpg"}/
+              .portfolio-caption
+                %h4 Explore
+                %p.text-muted Graphic Design
+            .col-md-4.col-sm-6.portfolio-item
+              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
+                .portfolio-hover
+                  .portfolio-hover-content
+                    %i.fa.fa-plus.fa-3x
+                %img.img-fluid{:alt => "", :src => "img/portfolio/03-thumbnail.jpg"}/
+              .portfolio-caption
+                %h4 Finish
+                %p.text-muted Identity
+            .col-md-4.col-sm-6.portfolio-item
+              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal4"}
+                .portfolio-hover
+                  .portfolio-hover-content
+                    %i.fa.fa-plus.fa-3x
+                %img.img-fluid{:alt => "", :src => "img/portfolio/04-thumbnail.jpg"}/
+              .portfolio-caption
+                %h4 Lines
+                %p.text-muted Branding
+            .col-md-4.col-sm-6.portfolio-item
+              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal5"}
+                .portfolio-hover
+                  .portfolio-hover-content
+                    %i.fa.fa-plus.fa-3x
+                %img.img-fluid{:alt => "", :src => "img/portfolio/05-thumbnail.jpg"}/
+              .portfolio-caption
+                %h4 Southwest
+                %p.text-muted Website Design
+            .col-md-4.col-sm-6.portfolio-item
+              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal6"}
+                .portfolio-hover
+                  .portfolio-hover-content
+                    %i.fa.fa-plus.fa-3x
+                %img.img-fluid{:alt => "", :src => "img/portfolio/06-thumbnail.jpg"}/
+              .portfolio-caption
+                %h4 Window
+                %p.text-muted Photography
+    -#
+      / About
+      %section#about
+        .container
+          .row
+            .col-lg-12.text-center
+              %h2.section-heading.text-uppercase About
+              %h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+          .row
+            .col-lg-12
+              %ul.timeline
+                %li
+                  .timeline-image
+                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/1.jpg"}/
+                  .timeline-panel
+                    .timeline-heading
+                      %h4 2009-2011
+                      %h4.subheading Our Humble Beginnings
+                    .timeline-body
+                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                %li.timeline-inverted
+                  .timeline-image
+                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/2.jpg"}/
+                  .timeline-panel
+                    .timeline-heading
+                      %h4 March 2011
+                      %h4.subheading An Agency is Born
+                    .timeline-body
+                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                %li
+                  .timeline-image
+                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/3.jpg"}/
+                  .timeline-panel
+                    .timeline-heading
+                      %h4 December 2012
+                      %h4.subheading Transition to Full Service
+                    .timeline-body
+                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                %li.timeline-inverted
+                  .timeline-image
+                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/4.jpg"}/
+                  .timeline-panel
+                    .timeline-heading
+                      %h4 July 2014
+                      %h4.subheading Phase Two Expansion
+                    .timeline-body
+                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                %li.timeline-inverted
+                  .timeline-image
+                    %h4
+                      Be Part
+                      = succeed "Of" do
+                        %br/
+                      = succeed "Story!" do
+                        %br/
+    / Team
+    %section#team.bg-light
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2.section-heading.text-uppercase Members
+            %h3.section-subheading.text-muted わたしたちのメンバーを紹介します。
+        .row
+          .col-sm-4
+            .team-member
+              %img.mx-auto.rounded-circle{:alt => "", :src => "images/team/megumi.png"}/
+              %h4 西岡めぐみ
+              %p.text-muted Lead Marketer
+              %ul.list-inline.social-buttons
+                %li.list-inline-item
+                  %a{:href => "https://twitter.com/megumifunction"}
+                    %i.fa.fa-twitter
+                %li.list-inline-item
+                  %a{:href => "mailto:nishioka@hidesys.net"}
+                    %i.fa.fa-envelope
+          .col-sm-4
+            .team-member
+              %img.mx-auto.rounded-circle{:alt => "", :src => "images/team/hidesys.png"}/
+              %h4 ひでシス
+              %p.text-muted Lead Developer
+              %ul.list-inline.social-buttons
+                %li.list-inline-item
+                  %a{:href => "https://twitter.com/hidesys"}
+                    %i.fa.fa-twitter
+                %li.list-inline-item
+                  %a{:href => "mailto:info@hidesys.net"}
+                    %i.fa.fa-envelope
+          .col-sm-4
+            .team-member
+              %img.mx-auto.rounded-circle{:alt => "", :src => "images/team/others.png"}/
+              %h4 ほかにも仲間がいっぱい
+              %p.text-muted Others
+              %ul.list-inline.social-buttons
+      -#
+        .row
+          .col-lg-8.mx-auto.text-center
+            %p.large.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+    / Clients
+    -#
+      %section.py-5
+        .container
+          .row
+            .col-md-3.col-sm-6
+              %a{:href => "#"}
+                %img.img-fluid.d-block.mx-auto{:alt => "", :src => "img/logos/envato.jpg"}/
+            .col-md-3.col-sm-6
+              %a{:href => "#"}
+                %img.img-fluid.d-block.mx-auto{:alt => "", :src => "img/logos/designmodo.jpg"}/
+            .col-md-3.col-sm-6
+              %a{:href => "#"}
+                %img.img-fluid.d-block.mx-auto{:alt => "", :src => "img/logos/themeforest.jpg"}/
+            .col-md-3.col-sm-6
+              %a{:href => "#"}
+                %img.img-fluid.d-block.mx-auto{:alt => "", :src => "img/logos/creative-market.jpg"}/
+    / Contact
+    %section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2.section-heading.text-uppercase Contact
+            %h3.section-subheading.text-muted
+              %span{style: "color: white;"}
+        .row
+          .col-lg-12.text-center
+            %p{style: "color: white;"}
+              %b 西岡めぐみソフトウェア
+            %p{style: "color: white;"}
+              Nishioka-Megumi Software / 西惠软件 (Xihui Software)
+            %p
+              %a{:href => "mailto:megumi@hidesys.net"}
+                megumi@hidesys.net
+            %p
+              %a{:href => "https://takk.fun/hidesys", target: "_blank"}
+                takk! 頼みごとボックス
+            %p
+              %a{:href => "tel:050-3568-6675"}
+                (+81)50-3568-6675
+    / Footer
+    %footer
+      .container
+        .row
+          .col-md-4
+            %span.copyright Copyright © 西岡めぐみソフトウェア
+          -#
+            .col-md-4
+              %ul.list-inline.social-buttons
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.fa.fa-twitter
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.fa.fa-facebook
+                %li.list-inline-item
+                  %a{:href => "#"}
+                    %i.fa.fa-linkedin
+            .col-md-4
+              %ul.list-inline.quicklinks
+                %li.list-inline-item
+                  %a{:href => "#"} Privacy Policy
+                %li.list-inline-item
+                  %a{:href => "#"} Terms of Use
+    / Modals (Removed)
+    / Custom scripts for this template
+    = javascript_include_tag "agency"
