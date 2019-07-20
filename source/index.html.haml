@@ -3,9 +3,11 @@
   %head
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
-    %meta{:content => "西岡めぐみソフトウェアは、コンピュータで相反する要求を同時に解決するソフトウェアデベロッパーです。", :name => "description"}/
+    %meta{:content => "めぐみソフトは、コンピュータで相反する要求を同時に解決するソフトウェアデベロッパーです。", :name => "description"}/
     %meta{:content => "西岡めぐみ / hidesys", :name => "author"}/
-    %title 西岡めぐみソフトウェア
+    %title めぐみソフト
+    / Font
+    %link{:href => "https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap", :rel => "stylesheet"}/
     / Latest compiled and minified CSS
     %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css", :integrity => "sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4", :rel => "stylesheet"}/
     / Custom fonts for this template
@@ -43,7 +45,7 @@
     / Navigation
     %nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
       .container
-        %a.navbar-brand.js-scroll-trigger{:href => "#page-top"} 西岡めぐみソフトウェア
+        %a.navbar-brand.js-scroll-trigger{:href => "#page-top"} めぐみソフト
         %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
           Menu
           %i.fa.fa-bars
@@ -64,8 +66,8 @@
     %header.masthead
       .container
         .intro-text
-          .intro-lead-in コンピュータで相反する要求を同時に解決する
-          .intro-heading.text-uppercase 西岡めぐみソフトウェア
+          .intro-lead-in 相反する要求を同時に解決する
+          .intro-heading.text-uppercase めぐみソフト
           %a.btn.btn-primary.btn-xl.js-scroll-trigger{:href => "#services"} サービス
     / Services
     %section#services
@@ -73,7 +75,7 @@
         .row
           .col-lg-12.text-center
             %h2.section-heading.text-uppercase Services
-            %h3.section-subheading.text-muted 西岡めぐみソフトウェアが提供する4つのサービス
+            %h3.section-subheading.text-muted めぐみソフトが提供する4つのサービス
         .row.text-center
           .col-md-6
             %span.fa-stack.fa-4x
@@ -263,9 +265,9 @@
               %span{style: "color: white;"}
                 私たちはあなたとともにあります
             %p{style: "color: white;"}
-              %b 西岡めぐみソフトウェア
+              %b めぐみソフト
             %p{style: "color: white;"}
-              Nishioka-Megumi Software / 西恵電子媒体
+              合同会社西岡めぐみソフトウェア (Nishioka-Megumi Software) / 西恵電子媒体
             %p
               %a.btn.btn-info.btn-lg{:href => "mailto:megumi@hidesys.net"}
                 %i.fa.fa-envelope
@@ -279,7 +281,7 @@
       .container
         .row
           .col-md-12
-            %span.copyright Copyright © 西岡めぐみソフトウェア
+            %span.copyright Copyright © 合同会社西岡めぐみソフトウェア
           -#
             .col-md-4
               %ul.list-inline.social-buttons

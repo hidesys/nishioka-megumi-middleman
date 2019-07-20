@@ -1,4 +1,4 @@
-# 西岡めぐみソフトウェア Webサイトソースコード
+# めぐみソフト Webサイトソースコード
 
 ## Usage
 `bundle exec middleman build`

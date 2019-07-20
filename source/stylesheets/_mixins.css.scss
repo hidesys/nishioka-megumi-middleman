@@ -9,7 +9,8 @@
 
 // Font Mixins
 @mixin serif-font {
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  // font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'M PLUS Rounded 1c', "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
 @mixin script-font {
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
@@ -18,5 +19,5 @@
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 @mixin heading-font {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'M PLUS Rounded 1c', "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
