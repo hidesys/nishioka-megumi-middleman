@@ -26,7 +26,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  @include heading-font;
 }
 
 section {
@@ -53,7 +52,6 @@ section {
 
 // Button Styles
 .btn {
-  @include heading-font;
   font-weight: 700;
 }
 

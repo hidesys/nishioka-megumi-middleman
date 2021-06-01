@@ -15,7 +15,6 @@ header.masthead {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
     }
     .intro-heading {
       img {
@@ -39,7 +38,7 @@ header.masthead {
         font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
-        @include serif-font;
+        ;
       }
       .intro-heading {
         img {
