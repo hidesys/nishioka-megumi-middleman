@@ -61,7 +61,7 @@
               %li.nav-item
                 %a.nav-link.js-scroll-trigger{:href => "#about"} About
             %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#team"} Members
+              %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Works
             %li.nav-item
               %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
     / Header
@@ -110,41 +110,88 @@
             %p
               %a.btn.btn-info.btn-xl.js-scroll-trigger{href: "#contact"} コンタクトを取る
     / Portfolio Grid
-    -#
-      %section#portfolio.bg-light
-        .container
-          .row
-            .col-lg-12.text-center
-              %h2.section-heading.text-uppercase Works
-              %h3.section-subheading.text-muted 私たちが提供した製品一覧
-          .row
-            .col-md-4.col-sm-6.portfolio-item
-              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal1"}
-                .portfolio-hover
-                  .portfolio-hover-content
-                    %i.fa.fa-plus.fa-3x
-                %img.img-fluid{:alt => "", :src => "images/portfolio/01-thumbnail.jpg"}/
-              .portfolio-caption
-                %h4 Webアプリ
-                %p.text-muted 提案〜開発〜運用まで
-            .col-md-4.col-sm-6.portfolio-item
-              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
-                .portfolio-hover
-                  .portfolio-hover-content
-                    %i.fa.fa-plus.fa-3x
-                %img.img-fluid{:alt => "", :src => "images/portfolio/02-thumbnail.jpg"}/
-              .portfolio-caption
-                %h4 Vtuber
-                %p.text-muted バーチャルYouTuber
-            .col-md-4.col-sm-6.portfolio-item
-              %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
-                .portfolio-hover
-                  .portfolio-hover-content
-                    %i.fa.fa-plus.fa-3x
-                %img.img-fluid{:alt => "", :src => "images/portfolio/03-thumbnail.jpg"}/
-              .portfolio-caption
-                %h4 Finish
-                %p.text-muted Identity
+    %section#portfolio.bg-light
+      .container
+        .row
+          .col-12.text-center
+            %h2.section-heading.text-uppercase Works
+            %h3.section-subheading.text-muted 私たちが提供した製品一覧
+        .row.justify-content-center.d-flex
+          .col-12.portfolio-item.text-center
+            %h4.works-heading 開発補助
+          .col-md-6.col-lg-4.portfolio-item.text-center
+            .card
+              .card-body
+                %h5.card-titler VR内見システム
+                %h6.card-subtitle.mb-2.text-muted 不動産向け
+                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Rails
+                %span.badge.badge-pill.badge-success Vue.js
+                %span.badge.badge-pill.badge-warning GCS
+                %span.badge.badge-pill.badge-warning S3
+                %span.badge.badge-pill.badge-info Heroku
+                %span.badge.badge-pill.badge-info PostgreSQL
+          .col-md-6.col-lg-4.portfolio-item.text-center
+            .card
+              .card-body
+                %h5.card-title 家賃保証額推定システム
+                %h6.card-subtitle.mb-2.text-muted 不動産向け
+                %span.badge.badge-pill.badge-warning Python
+                %span.badge.badge-pill.badge-warning AWS
+                %span.badge.badge-pill.badge-primary DynamoDB
+          .col-12.portfolio-item.text-center
+            %h4.works-heading プロジェクト完遂
+          .col-md-6.col-lg-4.portfolio-item.text-center
+            .card
+              .card-body
+                %h5.card-title リアルタイム音声翻訳アプリ
+                %h6.card-subtitle.mb-2.text-muted 海外旅行者向け
+                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Rails
+                %span.badge.badge-pill.badge-success Vue.js
+                %span.badge.badge-pill.badge-primary Google Speech-to-Text
+                %span.badge.badge-pill.badge-primary Goolge Translate
+          .col-md-6.col-lg-4.portfolio-item.text-center
+            .card
+              .card-body
+                %h5.card-title 生活記録アプリ
+                %h6.card-subtitle.mb-2.text-muted 一般向け
+                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Rails
+                %span.badge.badge-pill.badge-success Vue.js
+                %span.badge.badge-pill.badge-info PostgreSQL
+          .col-md-6.col-lg-4.portfolio-item.text-center 
+            .card
+              .card-body
+                %h5.card-title 予約自動コールセンターシステム
+                %h6.card-subtitle.mb-2.text-muted 医療機関向け
+                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Rails
+                %span.badge.badge-pill.badge-danger Twilio
+                %span.badge.badge-pill.badge-warning GCS
+                %span.badge.badge-pill.badge-info PostgreSQL
+                %span.badge.badge-pill.badge-info Firestore
+          .col-md-6.col-lg-4.portfolio-item.text-center 
+            .card
+              .card-body
+                %h5.card-title 会員トレーニング管理システム
+                %h6.card-subtitle.mb-2.text-muted 医療機関向け
+                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Rails
+                %span.badge.badge-pill.badge-success Vue.js
+                %span.badge.badge-pill.badge-warning GCS
+                %span.badge.badge-pill.badge-info PostgreSQL
+          .col-md-6.col-lg-4.portfolio-item.text-center 
+            .card
+              .card-body
+                %h5.card-title 医療用語管理システム
+                %h6.card-subtitle.mb-2.text-muted 医療機関向け
+                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Rails
+                %span.badge.badge-pill.badge-danger Redmine 
+                %span.badge.badge-pill.badge-warning Javascript 
+                %span.badge.badge-pill.badge-primary MySQL
+
     -#
       / About
       %section#about
@@ -200,48 +247,8 @@
                         %br/
                       = succeed "Story!" do
                         %br/
-    / Team
-     / %section#team.bg-light
-        .container
-          .row
-            .col-lg-12.text-center
-              %h2.section-heading.text-uppercase Members
-              %h3.section-subheading.text-muted わたしたちのメンバーを紹介します。
-          .row
-            .col-sm-4{ style: 'display: none;' }
-              .team-member
-                %img.mx-auto.rounded-circle{:alt => "", :src => "images/team/megumi.jpg"}/
-                %h4 ひでシス（西岡めぐみ）
-                %p.text-muted Lead Marketer
-                %ul.list-inline.social-buttons
-                  %li.list-inline-item
-                    %a{:href => "https://twitter.com/megumifunction", target: "_blank"}
-                      %i.fab.fa-twitter
-                  %li.list-inline-item
-                    %a{:href => "mailto:nishioka@hidesys.net"}
-                      %i.fa.fa-envelope
-            .col-sm-4
-              .team-member
-                %img.mx-auto.rounded-circle{:alt => "", :src => "images/team/hidesys.png"}/
-                %h4 ひでシス
-                %p.text-muted Lead Developer
-                %ul.list-inline.social-buttons
-                  %li.list-inline-item
-                    %a{:href => "https://twitter.com/hidesys", target: "_blank"}
-                      %i.fab.fa-twitter
-                  %li.list-inline-item
-                    %a{:href => "mailto:info@hidesys.net"}
-                      %i.fa.fa-envelope
-            .col-sm-4{ style: 'display: none;' }
-              .team-member
-                %img.mx-auto.rounded-circle{:alt => "", :src => "images/team/others.png"}/
-                %h4 ほかにも仲間がいっぱい
-                %p.text-muted Others
-                %ul.list-inline.social-buttons
-      -#
-        .row
-          .col-lg-8.mx-auto.text-center
-            %p.large.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+    / Results
+
     / Clients
     -#
       %section.py-5
