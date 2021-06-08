@@ -58,10 +58,10 @@
             -#
               %li.nav-item
                 %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Portfolio
-              %li.nav-item
-                %a.nav-link.js-scroll-trigger{:href => "#about"} About
             %li.nav-item
               %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Works
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#about"} About
             %li.nav-item
               %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
     / Header
@@ -72,7 +72,7 @@
           .intro-heading.text-uppercase
             %img.img-fluid{:src => "images/icon.png"}/
             めぐみソフト
-          %a.btn.btn-primary.btn-xl.js-scroll-trigger{:href => "#services"} サービス
+          %a.btn.btn-primary.btn-xl.js-scroll-trigger{:href => "#works"} Works
     / Services
     %section#services
       .container
@@ -125,11 +125,11 @@
               .card-body
                 %h5.card-titler VR内見システム
                 %h6.card-subtitle.mb-2.text-muted 不動産向け
-                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Ruby
                 %span.badge.badge-pill.badge-danger Rails
                 %span.badge.badge-pill.badge-success Vue.js
-                %span.badge.badge-pill.badge-warning GCS
-                %span.badge.badge-pill.badge-warning S3
+                %span.badge.badge-pill.badge-warning Google Coud Storage
+                %span.badge.badge-pill.badge-warning AWS S3
                 %span.badge.badge-pill.badge-info Heroku
                 %span.badge.badge-pill.badge-info PostgreSQL
           .col-md-6.col-lg-4.portfolio-item.text-center
@@ -138,7 +138,7 @@
                 %h5.card-title 家賃保証額推定システム
                 %h6.card-subtitle.mb-2.text-muted 不動産向け
                 %span.badge.badge-pill.badge-warning Python
-                %span.badge.badge-pill.badge-warning AWS
+                %span.badge.badge-pill.badge-warning AWS Lambda
                 %span.badge.badge-pill.badge-primary DynamoDB
         .row.justify-content-center
           .col-12.portfolio-item.text-center
@@ -149,7 +149,7 @@
               .card-body
                 %h5.card-title リアルタイム音声翻訳アプリ
                 %h6.card-subtitle.mb-2.text-muted 海外旅行者向け
-                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Ruby
                 %span.badge.badge-pill.badge-danger Rails
                 %span.badge.badge-pill.badge-success Vue.js
                 %span.badge.badge-pill.badge-primary Google Speech-to-Text
@@ -159,97 +159,82 @@
               .card-body
                 %h5.card-title 生活記録アプリ
                 %h6.card-subtitle.mb-2.text-muted 一般向け
-                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Ruby
                 %span.badge.badge-pill.badge-danger Rails
                 %span.badge.badge-pill.badge-success Vue.js
                 %span.badge.badge-pill.badge-info PostgreSQL
-          .col-md-6.col-lg-4.portfolio-item.text-center 
+          .col-md-6.col-lg-4.portfolio-item.text-center
             .card
               .card-body
-                %h5.card-title 予約自動コールセンターシステム
+                %h5.card-title
+                  = link_to 'ワクチン予約.com', 'https://tel.vaccine-yoyaku.com/', target: '_blank', class: 'text-primary'
                 %h6.card-subtitle.mb-2.text-muted 医療機関向け
-                %span.badge.badge-pill.badge-danger Ruby 
-                %span.badge.badge-pill.badge-danger Rails
-                %span.badge.badge-pill.badge-danger Twilio
-                %span.badge.badge-pill.badge-warning GCS
-                %span.badge.badge-pill.badge-info PostgreSQL
-                %span.badge.badge-pill.badge-info Firestore
-          .col-md-6.col-lg-4.portfolio-item.text-center 
+                %div
+                  %span.badge.badge-pill.badge-danger Ruby
+                  %span.badge.badge-pill.badge-danger Rails
+                  %span.badge.badge-pill.badge-danger Twilio
+                  %span.badge.badge-pill.badge-warning Google Cloud Storage
+                  %span.badge.badge-pill.badge-info PostgreSQL
+                  %span.badge.badge-pill.badge-info Firestore
+                新型コロナワクチン個別接種の予約で電話がパンクしている医療機関を救う、自動コールセンターシステム
+          .col-md-6.col-lg-4.portfolio-item.text-center
             .card
               .card-body
                 %h5.card-title 会員トレーニング管理システム
                 %h6.card-subtitle.mb-2.text-muted 医療機関向け
-                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Ruby
                 %span.badge.badge-pill.badge-danger Rails
                 %span.badge.badge-pill.badge-success Vue.js
-                %span.badge.badge-pill.badge-warning GCS
+                %span.badge.badge-pill.badge-warning Google Cloud Storage
                 %span.badge.badge-pill.badge-info PostgreSQL
-          .col-md-6.col-lg-4.portfolio-item.text-center 
+          .col-md-6.col-lg-4.portfolio-item.text-center
             .card
               .card-body
                 %h5.card-title 医療用語管理システム
                 %h6.card-subtitle.mb-2.text-muted 医療機関向け
-                %span.badge.badge-pill.badge-danger Ruby 
+                %span.badge.badge-pill.badge-danger Ruby
                 %span.badge.badge-pill.badge-danger Rails
-                %span.badge.badge-pill.badge-danger Redmine 
-                %span.badge.badge-pill.badge-warning Javascript 
+                %span.badge.badge-pill.badge-danger Redmine
+                %span.badge.badge-pill.badge-warning Javascript
                 %span.badge.badge-pill.badge-primary MySQL
 
-    -#
-      / About
-      %section#about
-        .container
-          .row
-            .col-lg-12.text-center
-              %h2.section-heading.text-uppercase About
-              %h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-          .row
-            .col-lg-12
-              %ul.timeline
-                %li
-                  .timeline-image
-                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/1.jpg"}/
-                  .timeline-panel
-                    .timeline-heading
-                      %h4 2009-2011
-                      %h4.subheading Our Humble Beginnings
-                    .timeline-body
-                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                %li.timeline-inverted
-                  .timeline-image
-                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/2.jpg"}/
-                  .timeline-panel
-                    .timeline-heading
-                      %h4 March 2011
-                      %h4.subheading An Agency is Born
-                    .timeline-body
-                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                %li
-                  .timeline-image
-                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/3.jpg"}/
-                  .timeline-panel
-                    .timeline-heading
-                      %h4 December 2012
-                      %h4.subheading Transition to Full Service
-                    .timeline-body
-                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                %li.timeline-inverted
-                  .timeline-image
-                    %img.rounded-circle.img-fluid{:alt => "", :src => "img/about/4.jpg"}/
-                  .timeline-panel
-                    .timeline-heading
-                      %h4 July 2014
-                      %h4.subheading Phase Two Expansion
-                    .timeline-body
-                      %p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                %li.timeline-inverted
-                  .timeline-image
-                    %h4
-                      Be Part
-                      = succeed "Of" do
-                        %br/
-                      = succeed "Story!" do
-                        %br/
+    / About
+    %section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2.section-heading.text-uppercase About
+            %h3.section-subheading.text-muted 会社情報
+        .row
+          .col-lg-12
+            %table.table.table-striped
+              %tbody
+                %tr
+                  %th 会社名
+                  %td 株式会社めぐみソフト
+                %tr
+                  %th 法人番号
+                  %td 011003010168
+                %tr
+                  %th Webサイト
+                  %td= link_to 'https://nishioka-megumi.com/', 'https://nishioka-megumi.com/', target: '_blank'
+                %tr
+                  %th 所在地
+                  %td 〒105-0013 東京都港区浜松町2-2-15 浜松町ダイヤビル2F
+                %tr
+                  %th 代表者
+                  %td 中庄谷 栄太郎
+                %tr
+                  %th 問い合わせ先
+                  %td
+                    %ul
+                      %li
+                        メールアドレス：
+                        = link_to 'inquiry@mail.vaccine-yoyaku.com', 'mailto:inquiry@mail.vaccine-yoyaku.com'
+                      %li
+                        電話：
+                        = link_to '050-3152-9731', 'tel:050-3152-9731'
+
     / Results
 
     / Clients
@@ -281,13 +266,13 @@
             %p{style: "color: white;"}
               株式会社めぐみソフト (Megumi Soft Inc.)
             %p
-              %a.btn.btn-info.btn-lg{:href => "mailto:megumi@hidesys.net"}
+              %a.btn.btn-info.btn-lg{:href => "mailto:inquiry@mail.vaccine-yoyaku.com"}
                 %i.fa.fa-envelope
-                megumi@hidesys.net
+                inquiry@mail.vaccine-yoyaku.com
             %p
-              %a.btn.btn-info.btn-lg{:href => "tel:050-3568-6675"}
+              %a.btn.btn-info.btn-lg{:href => "tel:050-3152-9731"}
                 %i.fas.fa-phone
-                050-3568-6675
+                050-3152-9731
     / Footer
     %footer
       .container
@@ -296,7 +281,7 @@
             .copyright
               Copyright © 株式会社めぐみソフト
               %br/
-              Tel.: 050-3568-6675
+              Tel.: 050-3152-9731
               %br/
               Address: 〒105-0013 東京都港区浜松町2-2-15 浜松町ダイヤビル2F
           -#
