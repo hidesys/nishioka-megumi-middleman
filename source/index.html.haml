@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
-    %meta{:content => "めぐみソフトは、コンピュータで相反する要求を同時に解決するソフトウェアデベロッパーです。", :name => "description"}/
+    %meta{:content => "めぐみソフトは、業務フローの再設計からDXを推進するソフトウェアデベロッパーです。", :name => "description"}/
     %meta{:content => "hidesys,めぐみソフト,ひでシス", :name => "author"}/
     %title 株式会社めぐみソフト
     / Font
@@ -52,7 +52,7 @@
               %li.nav-item
                 %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Portfolio
             %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#portfolio"} Works
+              %a.nav-link.js-scroll-trigger{:href => "#works"} Works
             %li.nav-item
               %a.nav-link.js-scroll-trigger{:href => "#about"} About
             %li.nav-item
@@ -62,7 +62,7 @@
       .container
         .intro-text
           .intro-lead-in 業務フローの再設計からDXを推進する
-          .intro-heading.text-uppercase
+          .intro-heading
             %img.img-fluid{:src => "images/icon.png"}/
             めぐみソフト
           %a.btn.btn-primary.btn-xl.js-scroll-trigger{:href => "#works"} Works
@@ -102,18 +102,18 @@
           .col-lg-12.text-center
             %p
               %a.btn.btn-info.btn-xl.js-scroll-trigger{href: "#contact"} コンタクトを取る
-    / Portfolio Grid
-    %section#portfolio.bg-light
+    / WOrks Grid
+    %section#works.bg-light
       .container
         .row
           .col-12.text-center
             %h2.section-heading.text-uppercase Works
             %h3.section-subheading.text-muted 私たちが提供した製品一覧
         .row.justify-content-center
-          .col-12.portfolio-item.text-center
+          .col-12.text-center
             %h4.works-heading 開発補助
         .row.justify-content-center
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-titler VR内見システム
@@ -125,7 +125,7 @@
                 %span.badge.badge-pill.badge-warning AWS S3
                 %span.badge.badge-pill.badge-info Heroku
                 %span.badge.badge-pill.badge-info PostgreSQL
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-title 家賃保証額推定システム
@@ -134,10 +134,10 @@
                 %span.badge.badge-pill.badge-warning AWS Lambda
                 %span.badge.badge-pill.badge-primary DynamoDB
         .row.justify-content-center
-          .col-12.portfolio-item.text-center
+          .col-12.text-center
             %h4.works-heading プロジェクト完遂
         .row.justify-content-center
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-title リアルタイム音声翻訳アプリ
@@ -147,7 +147,7 @@
                 %span.badge.badge-pill.badge-success Vue.js
                 %span.badge.badge-pill.badge-primary Google Speech-to-Text
                 %span.badge.badge-pill.badge-primary Goolge Translate
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-title 生活記録アプリ
@@ -156,7 +156,7 @@
                 %span.badge.badge-pill.badge-danger Rails
                 %span.badge.badge-pill.badge-success Vue.js
                 %span.badge.badge-pill.badge-info PostgreSQL
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-title
@@ -170,7 +170,7 @@
                   %span.badge.badge-pill.badge-info PostgreSQL
                   %span.badge.badge-pill.badge-info Firestore
                 新型コロナワクチン個別接種の予約で電話がパンクしている医療機関を救う、自動コールセンターシステム
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-title 会員トレーニング管理システム
@@ -180,7 +180,7 @@
                 %span.badge.badge-pill.badge-success Vue.js
                 %span.badge.badge-pill.badge-warning Google Cloud Storage
                 %span.badge.badge-pill.badge-info PostgreSQL
-          .col-md-6.col-lg-4.portfolio-item.text-center
+          .col-md-6.col-lg-4.text-center.p-2
             .card
               .card-body
                 %h5.card-title 医療用語管理システム
@@ -261,7 +261,7 @@
             %p
               %a.btn.btn-info.btn-lg{:href => "mailto:inquiry@mail.nishioka-megumi.com"}
                 %i.fa.fa-envelope
-                inquiry@mail.nishioka-megumi.com
+                メール
             %p
               %a.btn.btn-info.btn-lg{:href => "tel:050-3152-9731"}
                 %i.fas.fa-phone
